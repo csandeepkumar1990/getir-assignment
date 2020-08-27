@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 // parse requests of content-type - application/json
 app.use(bodyParser.json());
 
-app.use('/public', express.static(path.join(__dirname, 'public')))
+//app.use('/public', express.static(path.join(__dirname, 'public')))
 
 //Swagger Confguration
 const swaggerDoc = require('./swaggerDoc');
