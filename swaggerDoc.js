@@ -28,6 +28,6 @@ const swaggerSpecV1 = swaggerJsdoc(optionsV1);
 const swaggerHtmlV1 = swaggerUi.generateHTML(swaggerSpecV1, optionsV1)
 
 module.exports = (app) => {
-    app.use('/api-docs', swaggerUi.serveFiles(swaggerSpecV1, optionsV1))
-    app.get('/api-docs', (req, res) => { res.send(swaggerHtmlV1) });
+    app.use('https://getir-assignment-sandeep.herokuapp.com/api-docs', swaggerUi.serveFiles(swaggerSpecV1, optionsV1))
+    app.get('https://getir-assignment-sandeep.herokuapp.com/api-docs', (req, res) => { res.send(swaggerHtmlV1) });
 }
