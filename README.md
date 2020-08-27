@@ -34,7 +34,7 @@ http://localhost:3000/api/products
 # Sample Request 
 
 https://getir-assignment-sandeep.herokuapp.com/api-docs/
-
+```
 {
 	"startDate": "2018-06-14",
 	"endDate": "2020-07-15",
@@ -94,6 +94,7 @@ Response
             "totalCount": 97723
         }
     ]
+```
 }
 
 
