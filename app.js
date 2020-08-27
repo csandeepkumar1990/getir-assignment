@@ -37,9 +37,10 @@ mongoose.connect(dbConfig.url, { useNewUrlParser: true, useUnifiedTopology: true
 app.use("/api", require("./routes/index"));
 //app.use(express.static('public'));
 
-app.get('*', (_req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
-});
+app.get("/", function (req, res) {
+    logger.info("Getir Backend App works!!!!!");
+    res.send("Getir Backend App works!!!!!");
+})
 
 app.listen(process.env.PORT || 3000, () => {
     console.log("Server is listening on port 3000");
