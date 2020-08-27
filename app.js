@@ -37,6 +37,10 @@ mongoose.connect(dbConfig.url, { useNewUrlParser: true, useUnifiedTopology: true
 app.use("/api", require("./routes/index"));
 app.use(express.static('public'));
 
+app.get('*', (_req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
 app.listen(3000, () => {
     console.log("Server is listening on port 3000");
 });
