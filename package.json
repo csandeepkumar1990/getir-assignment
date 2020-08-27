@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "jest --config ./jest.config.json --testEnvironment=node --verbose --forceExit --watchAll --maxWorkers=1",
-    "start": "node ./app.js"
+    "start": "node ./app"
   },
   "author": "Sandeep Chandupatla",
   "license": "ISC",
