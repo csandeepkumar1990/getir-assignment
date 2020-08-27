@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --config ./jest.config.json --testEnvironment=node --verbose --forceExit --watchAll --maxWorkers=1",
     "start": "node ./app.js",
-    "postinstall": "cd client && npm install"
+    "postinstall": "npm install"
   },
   "author": "Sandeep Chandupatla",
   "license": "ISC",
