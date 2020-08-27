@@ -1,0 +1,31 @@
+
+/products:
+  post:
+    tags: ["Products"]
+    description: Get Products.
+    produces:
+      - application/json
+    parameters:
+      - name: startDate
+        description: Products created after the start date in “YYYY-MM-DD” format.
+        in: formData
+        required: true
+        type: string  
+      - name: endDate
+        description: Products created before the end date “YYYY-MM-DD” format.
+        in: formData
+        required: true
+        type: string 
+      - name: minCount
+        description: Minimum sum of the count array.
+        in: formData
+        required: true
+        type: number 
+      - name: maxCount
+        description: Maximum sum of the count array.
+        in: formData
+        required: true
+        type: number      
+    responses:
+      200:
+        description: Products
