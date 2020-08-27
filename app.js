@@ -37,6 +37,10 @@ mongoose.connect(dbConfig.url, { useNewUrlParser: true, useUnifiedTopology: true
 app.use("/api", require("./routes/index"));
 //app.use(express.static('public'));
 
+app.get('*', (_req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
+  });
+
 app.get("/", function (req, res) {
     logger.info("Getir Backend App works!!!!!");
     res.send("Getir Backend App works!!!!!");
