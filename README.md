@@ -4,6 +4,12 @@ Getir Interview Assignment
 # Heroku URL
 https://getir-assignment-sandeep.herokuapp.com/api-docs/
 
+# Postman url
+```
+POST :
+https://getir-assignment-sandeep.herokuapp.com/api/products
+```
+
 # Running the API 
 ```
 git clone https://github.com/csandeepkumar1990/getir-assignment.git
